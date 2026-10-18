@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title></title>
+
+</head>
+
+<body>
+
+
+    <h1>Event Organizer Portal : Master Registration</h1>
+
+    <p>Please fill out all sections to register as an official partner</p>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend><b>Step 1: Primary Contact Details</b></legend>
+
+            <br>
+
+            <label for="fname">First Name:</label>
+            <input type="text" name="firstname" id="fname" placeholder="John">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lastname" id="lname" placeholder="Doe">
+
+            <br><br>
+
+            <label for="wemail">Work Email:</label>
+            <input type="email" name="email" id="wemail">
+
+            <label for="pnum">Phone Number:</label>
+            <input type="tel" name="pnumber" id="pnum" placeholder="123-456-7890"><small>(Format: 123-456-7890)</small>
+
+            <br><br>
+
+            <label for="cweb">Company Website (URL):</label>
+            <input type="url" name="cwebsite" id="cweb" placeholder="https://example.com">
+
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><b>Step 2: Event Logistics</b></legend>
+
+            <br>
+
+            <label for="city">Target City:</label>
+            <input type="text" name="city" id="city" placeholder="Select or type......">
+
+            <label for="date">Proposed Date:</label>
+            <input type="date" name="date" id="date">
+
+            <label for="time">Preferred Start Time:</label>
+            <input type="time" name="time" id="time">
+
+            <br><br>
+
+            <label for="duration">Expected Duration(1-12 hours):</label>
+            <input type="number" name="duration" id="duration" min="1" max="12">
+
+            <label for="staffsize">Staff Size:</label>
+            <input type="range" name="staffsize" id="staffsize">
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><b>Step 3: Services & Boarding</b></legend>
+
+            <br>
+
+            <label for="category">Service Category: </label>
+            <select name="category" id="category">
+
+                <option value="--">-- Please choose an option --</option>
+
+                <optgroup label="Catering">
+                    <option value="buffet">Full Buffet</option>
+                    <option value="snacks">Light Snacks</option>
+                    <option value="beverage">Beverage Only</option>
+                </optgroup>
+
+                <optgroup label="Technical">
+                    <option value="audiovisual">Audio / Visal</option>
+                    <option value="lighting">Stage Lightning</option>
+                    <option value="internet">High Speed Internet</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="equipment">Equipment provided:</label><br>
+            <input type="checkbox" name="table" id="equipment">Tables & Chairs
+            <input type="checkbox" name="soundsystem" id="equipment">Sound Systems
+            <input type="checkbox" name="generator" id="equipment">Power Generators
+
+            <br><br>
+
+            <label for="color">Main Brand Color:</label>
+            <input type="color" name="color" id="color" value="red">
+
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><b>Step 4: Verification & Final Note</b></legend>
+
+            <br>
+
+            <label for="license">Upload Business License (Multiple files allowed):</label>
+            <br>
+            <input type="file" name="license" id="license">
+
+            <br><br>
+
+            <label for="details">Special Requirements / Special Notes:</label>
+            <br>
+            <textarea name="details" id="details" placeholder="Enter any specific details here...." rows="10" cols="70"></textarea>
+
+            <br><br>
+
+            <input type="checkbox">I certify that all provided information is accurate.
+
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <button type="reset" style="width: 200px; height: 40px;">
+            Reset Form
+        </button>
+
+        <button type="submit" style="width: 280px; height: 40px; background-color: green; color: white;">
+            Submit Registration
+        </button>
+
+    </form>
+
+</body>
+
+</html>
